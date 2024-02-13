@@ -7,7 +7,7 @@ import java.io.FileNotFoundException
 fun main() {
 
     val file = File("numbers.txt");
-    println("Type a positive integer (-1 to exit):")
+    println("Type a positive integer (-1 to exit):");
     var input = readLine()?.toInt()
     var index = 0;
     while (input != null && input != -1) {
@@ -43,7 +43,7 @@ fun isEven(numb: Int): Boolean{
         return false;
 }
 fun findMax(numb1: Int, numb2: Int, numb3: Int): Int{
-    var largest = 0;
+    var largest =0;
 
     if(numb1 > numb2 && numb1 > numb3){
         largest = numb1;
@@ -60,7 +60,7 @@ fun findMax(numb1: Int, numb2: Int, numb3: Int): Int{
 }
 fun isPalindrome(s: String): Boolean {
     // Remove spaces and convert to lowercase
-    val cleanString = s.replace(" ", "").toLowerCase()
+    val cleanString = s.replace(" ", "")
 
     // Compare the string with its reverse
     return cleanString == cleanString.reversed()
